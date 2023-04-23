@@ -25,7 +25,7 @@
                 <option name="shift" value="Tối">Tối</option>
             </select>
             
-            <select id="collector" name="nameTake" onclick="displayOption()" >
+            <select id="collector" name="nameTake" onmousedown="handleclick(event)" >
                 <option value="Nguyễn Văn A" style="display: none;">Nguyễn Văn A</option>
                 <option value="Nguyễn Văn B" style="display: none;">Nguyễn Văn B</option>
                 <option value="Nguyễn Văn C" style="display: none;">Nguyễn Văn C</option>
@@ -33,7 +33,7 @@
                 <option value="Nguyễn Thị E" style="display: none;">Nguyễn Thị E</option>
             </select>
             <div id="collector-option" style="display: none;">
-                <div id="collector-option-1" onclick="closeCollector1()">
+                <div id="collector-option-1" onclick="closeCollector('Nguyễn Văn A')">
                     <img class="collector-img" src="/public/img/ava-collector-1.png" alt="Nguyễn Văn A" width="48px" height="48px" style="border-radius: 50%;">
                     <div class="column-info">
                     Nguyễn Văn A
@@ -41,7 +41,7 @@
                     <p style="font-size: 10px">Bằng lái: C1</p>
                     </div>
                 </div>
-                <div id="collector-option-2" onclick="closeCollector2()">
+                <div id="collector-option-2" onclick="closeCollector('Nguyễn Văn B')">
                     <img class="collector-img" src="/public/img/ava-collector-2.png" alt="Nguyễn Văn B" width="48px" height="48px" style="border-radius: 50%;">
                     <div class="column-info">
                     Nguyễn Văn B
@@ -49,7 +49,7 @@
                     <p style="font-size: 10px">Bằng lái: D1</p>
                     </div>
                 </div>
-                <div id="collector-option-3" onclick="closeCollector3()">
+                <div id="collector-option-3" onclick="closeCollector('Nguyễn Văn C')">
                     <img class="collector-img" src="/public/img/ava-collector-3.png" alt="Nguyễn Văn C" width="48px" height="48px" style="border-radius: 50%;">
                     <div class="column-info">
                     Nguyễn Văn C
@@ -57,7 +57,7 @@
                     <p style="font-size: 10px">Bằng lái: E1</p>
                     </div>
                 </div>
-                <div id="collector-option-4" onclick="closeCollector4()">
+                <div id="collector-option-4" onclick="closeCollector('Nguyễn Văn D')">
                     <img class="collector-img" src="/public/img/ava-collector-1.png" alt="Nguyễn Văn D" width="48px" height="48px" style="border-radius: 50%;">
                     <div class="column-info">
                     Nguyễn Văn D
@@ -65,7 +65,7 @@
                     <p style="font-size: 10px">Bằng lái: C1</p>
                     </div>
                 </div>
-                <div id="collector-option-5" onclick="closeCollector5()">
+                <div id="collector-option-5" onclick="closeCollector('Nguyễn Thị E')">
                     <img class="collector-img" src="/public/img/ava-collector-2.png" alt="Nguyễn Văn E" width="48px" height="48px" style="border-radius: 50%;">
                     <div class="column-info">
                     Nguyễn Thị E
@@ -74,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <select id="vehicle" name="vehicle" onclick="displayOption1()">
+            <select id="vehicle" name="vehicle" onmousedown="handleclick(event)">
                 <option name="vehicle" value="64A-12345" style="display: none;">64A-12345</option>
                 <option name="vehicle" value="64A-12346" style="display: none;">64A-12346</option>
                 <option name="vehicle" value="64A-12347" style="display: none;">64A-12347</option>
@@ -82,7 +82,7 @@
                 <option name="vehicle" value="64A-12349" style="display: none;">64A-12349</option>
             </select>
             <div id="vehicle-option" style="display: none;">
-                <div id="vehicle-option-1" onclick="closeVehicle1()">
+                <div id="vehicle-option-1" onclick="closeVehicle('64A-12345')">
                     <img class="vehicle-img" src="/public/img/vehicle-1.png" alt="64A-12345" width="84px" height="55px" style="border-radius: 25%;">
                     <div class="column-info">
                     64A-12345
@@ -90,7 +90,7 @@
                     <p style="font-size: 10px">Mức tiêu thụ: 20l/100km</p>
                     </div>
                 </div>
-                <div id="vehicle-option-2" onclick="closeVehicle2()">
+                <div id="vehicle-option-2" onclick="closeVehicle('64A-12346')">
                     <img class="vehicle-img" src="/public/img/vehicle-2.png" alt="64A-12346" width="84px" height="55px" style="border-radius: 25%;">
                     <div class="column-info">
                     64A-12346
@@ -98,24 +98,24 @@
                     <p style="font-size: 10px">Mức tiêu thụ: 15l/100km</p>
                 </div>
                 </div>
-                <div id="vehicle-option-3" onclick="closeVehicle3()">
-                    <img class="vehicle-img" src="/public/img/vehicle-3.png" alt="64A-12346" width="84px" height="55px" style="border-radius: 25%;">
+                <div id="vehicle-option-3" onclick="closeVehicle('64A-12347')">
+                    <img class="vehicle-img" src="/public/img/vehicle-3.png" alt="64A-12347" width="84px" height="55px" style="border-radius: 25%;">
                     <div class="column-info">
                     64A-12347
                     <p style="font-size: 10px">Tải trọng tối đa: 12 tấn</p>
                     <p style="font-size: 10px">Mức tiêu thụ: 20l/100km</p>
                 </div>
                 </div>
-                <div id="vehicle-option-4" onclick="closeVehicle4()">
-                    <img class="vehicle-img" src="/public/img/vehicle-1.png" alt="64A-12346" width="84px" height="55px" style="border-radius: 25%;">
+                <div id="vehicle-option-4" onclick="closeVehicle('64A-12348')">
+                    <img class="vehicle-img" src="/public/img/vehicle-1.png" alt="64A-12348" width="84px" height="55px" style="border-radius: 25%;">
                     <div class="column-info">
                     64A-12348
                     <p style="font-size: 10px">Tải trọng tối đa: 12 tấn</p>
                     <p style="font-size: 10px">Mức tiêu thụ: 25l/100km</p>
                 </div>
                 </div>
-                <div id="vehicle-option-5" onclick="closeVehicle5()">
-                    <img class="vehicle-img" src="/public/img/vehicle-2.png" alt="64A-12346" width="84px" height="55px" style="border-radius: 25%;">
+                <div id="vehicle-option-5" onclick="closeVehicle('64A-12349')">
+                    <img class="vehicle-img" src="/public/img/vehicle-2.png" alt="64A-12349" width="84px" height="55px" style="border-radius: 25%;">
                     <div class="column-info">
                     64A-12349
                     <p style="font-size: 10px">Tải trọng tối đa: 15 tấn</p>
