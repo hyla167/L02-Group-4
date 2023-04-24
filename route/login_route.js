@@ -12,6 +12,7 @@ const exampleAcc = [
     }
 ]
 
+
 router.post('/', (req, res) => {
     exampleAcc.forEach((acc) => {
             if (req.body.email == acc.email && req.body.password == acc.password){
