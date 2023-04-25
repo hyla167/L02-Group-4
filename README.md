@@ -2,6 +2,12 @@
 
 UWC2.0 is an open-source application for a Software Engineering project to resolve the urban waste management problem. This system can store and manage employee information including Back Officer (Officer in charge), Collector (Driver of collection trucks) and Janitor (collector of garbage in MCP). Furthermore, it can also provide information about time for each employee's task and create an optimal route (using Google Map API) for each collector's task.
 
+# User Interface
+![](https://github.com/hyla167/L02-Group-4/blob/master/demo/demo_homepage.png)
+![](https://github.com/hyla167/L02-Group-4/blob/master/demo/demo_task.png)
+![](https://github.com/hyla167/L02-Group-4/blob/master/demo/demo_staff.png)
+![](https://github.com/hyla167/L02-Group-4/blob/master/demo/demo_detail_task.png)
+
 # How to use
 To use the application, you will need to follow these steps:
 1. Clone the repository via `git clone https://github.com/hyla167/L02-Group-4.git` and `cd` into the cloned repository
@@ -14,15 +20,18 @@ To use the application, you will need to follow these steps:
 
 7. Run the application: `node server.js`. The email and password for login is `vovankha2003@gmail.com` and `admin123`
 
-## 📖 Documentation (in Vietnamese)
-
 ## 🚀 Features
 - 🔍 Search for a task by its ID, status, date; or by collector's name.
 - 🔔 Send task notification to employee.
 - ✅ Confirm done tasks
 - 🌈 CRUD Operations on tasks.
 - 🕓 View optimize route of a collector's task
+
 ## ⚠️ Limitations
+1. Route, MCP and Vehicle Management not yet implemented
+2. Each route can go through at most 3 MCPs
+3. The system does not have statistical information on vehicle, MCPs and staffs
+4. User profile and message not yet implemented
 
 # Contributor
 We are a group of students from **L02_Group 4** majoring in Computer Science at Ho Chi Minh University of Technology (HCMUT).
