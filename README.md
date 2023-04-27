@@ -2,6 +2,10 @@
 
 UWC2.0 is an open-source application for a Software Engineering project to resolve the urban waste management problem. This system can store and manage employee information including Back Officer (Officer in charge), Collector (Driver of collection trucks) and Janitor (collector of garbage in MCP). Furthermore, it can also provide information about time for each employee's task and create an optimal route (using Google Map API) for each collector's task.
 
+<h2 align="center"> Demo April 16th 2023 </h2>
+
+https://user-images.githubusercontent.com/107759618/234941483-61845bfa-da62-4add-bb9b-93cbb5672807.mp4
+
 # User Interface
 ![](https://github.com/hyla167/L02-Group-4/blob/master/demo/demo_homepage.png)
 ![](https://github.com/hyla167/L02-Group-4/blob/master/demo/demo_task.png)
