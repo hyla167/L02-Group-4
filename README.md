@@ -38,7 +38,7 @@ To use the application, you will need to follow these steps:
 4. User profile and message not yet implemented
 
 # Contributor
-We are a group of students from **L02_Group 4** majoring in Computer Science at Ho Chi Minh University of Technology (HCMUT).
+We are a group of students majoring in Computer Science from Ho Chi Minh University of Technology (HCMUT).
 
 Our members of the team:
 * Lã Nguyễn Gia Hy - 2110231
